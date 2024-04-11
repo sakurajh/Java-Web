@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<body>
+<center>
+	<center>
+		<img src="image/8.jpg" style="width: 50%;">
+	</center>
+	<hr>
+    <fieldset style="width:50%">
+        <form action="/submit-form" method="post" class="login1">
+            <legend style="font-size: 40px;text-align: center">登陆界面</legend>
+            <table>
+                <tr>
+                    <td><label for="name" style="font-size: 30px">姓名:</label></td>
+                    <td>
+                        <div style="margin-top: 5px;">
+                            <input type="text" id="name" name="name" placeholder="请输入你的姓名" style="width: 200px; height: 35px;"><br>
+                        </div>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="font-size: 30px">性别:</td>
+                    <td>
+                        <label for="male" style="font-size: 25px">男</label>
+                        <input type="radio" name="gender" id="male" value="0" checked size="20px">
+                        <label for="female" style="font-size: 25px">女</label>
+                        <input type="radio" name="gender" id="female" value="1" size="20px">
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="id" style="font-size: 30px">学号:</label></td>
+                    <td>
+                        <input type="text" id="id" name="id" placeholder="请输入你的学号"  style="width: 200px; height: 35px;"><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="age" style="font-size: 30px">年龄:</label></td>
+                    <td><input type="text" id="age" name="age" placeholder="请输入你的年龄"  style="width: 200px; height: 35px;"><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email" style="font-size: 30px">电子邮件:</label></td>
+                    
+					<td>
+						<input type="email" id="email" name="email" placeholder="请输入你的电子邮箱"  style="width: 200px; height: 35px;">
+						<select id="address" name="address" style="width: 200px; height: 35px;">
+							<option>@163.com</option>
+							<option>@126.com</option>
+							<option>@qq.com</option>
+						</select>
+					</td>
+				</tr>
+				
+				<tr>
+				    <td><label for="id" style="font-size: 30px">手机号:</label></td>
+				    <td>
+				        
+						<input type="text" id="id" name="id" placeholder="请输入你的手机号"  style="width: 200px; height: 35px;">
+						<input type="submit" value="发送验证码"  style="font-size: 25px;color:black">
+					</td>
+					
+				</tr>
+				
+				<tr>
+				    <td><label for="password" style="font-size: 30px">用户名:</label></td>
+				    <td><input type="password" id="password" name="password" placeholder="设置账户名" required  style="width: 200px; height: 35px;"><br></td>
+				</tr>
+				
+                <tr>
+                    <td><label for="password" style="font-size: 30px">密码:</label></td>
+                    <td><input type="password" id="password" name="password" placeholder="设置登录密码" required  style="width: 200px; height: 35px;"><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="password" style="font-size: 30px">日期:</label></td>
+                    <td><input type="date" id="date" name="date"style="width: 200px; height: 35px;"></td>
+
+                </tr>
+                <tr>
+                    <td><label for="password" style="font-size: 30px">你的爱好:</label></td>
+                    <td>
+                        <input type="checkbox" id="option1" name="answer" value="A" style="transform: scale(1.5);">
+                        <label for="optionA" style="font-size: 30px">篮球</label><br>
+
+                        <input type="checkbox" id="option2" name="answer" value="B" style="transform: scale(1.5);">
+                        <label for="optionB" style="font-size: 30px">足球</label><br>
+
+                        <input type="checkbox" id="option3" name="answer" value="C" style="transform: scale(1.5);">
+                        <label for="optionC" style="font-size: 30px">跳舞</label><br>
+                    </td>
+
+
+                </tr>
+
+                <tr>
+                    <td><label for="address" style="font-size: 30px">地址:</label></td>
+                    <td>
+                        <select id="address" name="address" style="width: 200px; height: 35px;">
+                            <optgroup label="山西省">
+                                <option value="address1" style="font-size: 15px">大同市</option>
+                                <option value="address2" style="font-size: 15px">运城市</option>
+                                <option value="address3" style="font-size: 15px">吕梁市</option>
+                                <option value="address3" style="font-size: 15px">晋城市</option>
+                            </optgroup>
+
+                            <optgroup label="河南省">
+                                <option value="address1" style="font-size: 15px">洛阳市</option>
+                                <option value="address2" style="font-size: 15px">栾川市</option>
+                                <option value="address3" style="font-size: 15px">郑州市</option>
+                                <option value="address3" style="font-size: 15px">商丘市</option>
+                            </optgroup>
+
+                        </select>
+                    </td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <label style="font-size: 30px" for="memo">个人简介:</label>
+                    </td>
+                    <td><textarea rows="5" cols="50" id="memo" name="memo" placeholder="这里输入你的个人信息"></textarea></td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="注册" style="font-size: 25px;color: red;" >
+                    </td>
+                </tr>
+				<div class="rg_right" style="font-size: 20px;">
+				        <p>已有账号？<a href="./log.html">立即登录</a></p>
+				</div>
+            </table>
+        </form>
+    </fieldset>
+
+</center>
+
+</body>
+</html>
