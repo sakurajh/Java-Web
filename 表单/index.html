@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<center>
+    <fieldset style="width:50%">
+        <form action="/submit-form" method="post">
+            <legend style="font-size: 25px;text-align: center">这是一个简单的表单</legend>
+            <table>
+                <tr>
+                    <td><label for="name">姓名:</label></td>
+                    <td ><input type="text" id="name" name="name" placeholder="请输入你的姓名"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="name">学号:</label></td>
+                    <td><input type="text" id="id" name="name" placeholder="请输入你的学号"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="name">年龄:</label></td>
+                    <td><input type="text" id="age" name="name" placeholder="请输入你的年龄"><br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="email">电子邮件:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="请输入你的电子邮箱"> <br><br></td>
+                </tr>
+                <tr>
+                    <td><label for="message">留言:</label><br></td>
+                    <td><textarea id="message" name="message" rows="5" cols="50" placeholder="有什么话就这这里说哦"></textarea><br><br></td>
+                </tr>
+                <tr>
+                    <td>性别:</td>
+                    <td>
+                        <label for="male">男</label>
+                        <input type="radio" name="gender" id="male" value="0" checked>
+                        <label for="female">女</label>
+                        <input type="radio" name="gender" id="female" value="0" checked>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" colspan="2">
+                        <input type="submit" value="提交" style="font-size: 20px">
+                        <input type="reset" value="重置" style="font-size: 20px">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+</center>
+
+</body>
+</html>
