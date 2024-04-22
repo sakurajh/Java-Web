@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>状态伪类</title>
+    <style>
+        /* Disabled状态样式 */
+        input:disabled {
+            background-color: lightgray;
+            color: gray;
+        }
+
+        /* Checked状态样式 */
+        input:checked {
+            text-decoration: line-through;
+        }
+
+        /* Enabled状态样式 */
+        input:enabled {
+            border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="默认文本" disabled>
+    <br><br>
+    <input type="checkbox" checked> 已选中
+    <br><br>
+    <input type="text" value="启用文本" enabled>
+</body>
+</html>
